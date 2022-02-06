@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #c9c9c9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .flag {
+            margin: 25px;
+            height: 200px;
+            width: 400px;
+            background-color: white;
+            border: 1px solid #343434;
+            position: relative;
+        }
+
+        .flag.spain .strip.red {
+            height: 25%;
+        }
+
+        .flag.spain .strip.yellow {
+            height: 50%;
+        }
+
+        .flag.denmark .square {
+            width: 20%;
+            height: 45%;
+            position: absolute;
+        }
+
+        .flag.denmark .rectangle {
+            width: 70%;
+            height: 45%;
+            position: absolute;
+        }
+
+        .flag.denmark .square.one {
+            top: 0;
+            left: 0;
+        }
+
+        .flag.denmark .square.two {
+            bottom: 0;
+            left: 0;
+        }
+
+        .flag.denmark .rectangle.one {
+            top: 0;
+            right: 0;
+        }
+
+        .flag.denmark .rectangle.two {
+            bottom: 0;
+            right: 0;
+        }
+
+        .flag.emiratosarabes .rectangle.green,
+        .flag.emiratosarabes .rectangle.black,
+        .flag.emiratosarabes .rectangle.white {
+            height: calc(100% / 3);
+            width: 100%;
+        }
+
+        .flag.emiratosarabes .rectangle.red {
+            height: 100%;
+            width: 20%;
+            position: absolute;
+        }
+
+        .flag.japan .circle {
+            height: 50%;
+            width: 25%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flag spain">
+        <div class="strip red"></div>
+        <div class="strip yellow"></div>
+        <div class="strip red"></div>
+    </div>
+    <div class="flag denmark">
+        <div class="square red one"></div>
+        <div class="square red two"></div>
+        <div class="rectangle red one"></div>
+        <div class="rectangle red two"></div>
+    </div>
+    <div class="flag emiratosarabes">
+        <div class="rectangle red"></div>
+        <div class="rectangle green"></div>
+        <div class="rectangle white"></div>
+        <div class="rectangle black"></div>
+    </div>
+    <div class="flag japan">
+        <div class="circle red"></div>
+    </div>
+</body>
+
+</html>
